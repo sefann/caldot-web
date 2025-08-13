@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowRight, Play } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 const HeroSection = () => {
   return (
@@ -64,18 +64,7 @@ const HeroSection = () => {
             </Link>
           </motion.div>
 
-          {/* Video Play Button */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="mt-12"
-          >
-            <button className="group flex items-center justify-center w-16 h-16 mx-auto bg-white bg-opacity-20 rounded-full hover:bg-opacity-30 transition-all duration-300 backdrop-blur-sm">
-              <Play className="w-6 h-6 text-white ml-1 group-hover:scale-110 transition-transform duration-300" />
-            </button>
-            <p className="text-sm text-gray-300 mt-4">Watch Our Story</p>
-          </motion.div>
+
         </motion.div>
       </div>
 
