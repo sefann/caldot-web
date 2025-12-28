@@ -73,15 +73,6 @@ const AboutPage = () => {
     }
   ]
 
-  const milestones = [
-    { year: '2008', title: 'Company Founded', description: 'Caldot Global Services established with a vision for comprehensive business solutions.' },
-    { year: '2012', title: 'First Major Contract', description: 'Secured our first enterprise-level client, marking significant growth.' },
-    { year: '2015', title: 'Service Expansion', description: 'Expanded services to include logistics and interior decoration.' },
-    { year: '2018', title: 'Digital Innovation', description: 'Launched Caldot Care platform for automobile maintenance services.' },
-    { year: '2021', title: 'Global Reach', description: 'Extended operations to serve clients across multiple countries.' },
-    { year: '2024', title: 'Future Forward', description: 'Continuing innovation and expansion in all service areas.' }
-  ]
-
   const testimonials = [
     {
       name: 'David Wilson',
@@ -244,60 +235,6 @@ const AboutPage = () => {
                 </div>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline/Milestones */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-zodiac-blue mb-6">
-              Our Journey
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From humble beginnings to becoming a trusted partner for businesses worldwide.
-            </p>
-          </motion.div>
-
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-caldot-orange"></div>
-            
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
-                >
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                    <div className="bg-white p-6 rounded-xl shadow-lg">
-                      <div className="text-2xl font-bold text-caldot-orange mb-2">
-                        {milestone.year}
-                      </div>
-                      <h3 className="text-xl font-semibold text-zodiac-blue mb-2">
-                        {milestone.title}
-                      </h3>
-                      <p className="text-gray-600">
-                        {milestone.description}
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="w-8 h-8 bg-caldot-orange rounded-full border-4 border-white shadow-lg relative z-10"></div>
-                  
-                  <div className="w-1/2"></div>
-                </motion.div>
-              ))}
-            </div>
           </div>
         </div>
       </section>

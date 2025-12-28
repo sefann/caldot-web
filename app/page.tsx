@@ -5,7 +5,6 @@ import ServicesOverview from '@/components/sections/ServicesOverview'
 import AboutSection from '@/components/sections/AboutSection'
 import WhyChooseUs from '@/components/sections/WhyChooseUs'
 import CaldotCareBanner from '@/components/sections/CaldotCareBanner'
-import ProjectsPreview from '@/components/sections/ProjectsPreview'
 import NewsletterSignup from '@/components/sections/NewsletterSignup'
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <AboutSection />
       <WhyChooseUs />
       <CaldotCareBanner />
-      <ProjectsPreview />
       <NewsletterSignup />
       
       <Footer />

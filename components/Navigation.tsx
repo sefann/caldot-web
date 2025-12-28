@@ -24,7 +24,6 @@ const Navigation = () => {
 
   const menuItems = [
     { name: 'Home', href: '/' },
-    { name: 'Projects', href: '/projects' },
     { name: 'Insights', href: '/insights' },
     { name: 'Contact', href: '/contact' },
   ]
